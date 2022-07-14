@@ -11,6 +11,7 @@ Data Execution Prevention (DEP): No
 
 
 ##########################################################
+```
 //testing: x64
 //len: 265
 
@@ -30,8 +31,9 @@ void main() {
     th = CreateThread(0, 0, (LPTHREAD_START_ROUTINE)exec, 0, 0, 0);
     WaitForSingleObject(th, -1);
 }
-
+```
 ############################################################
+```
 //testing: x32
 //len: 193 byte
 
@@ -44,5 +46,5 @@ int main()
 	((void(*)())sc)();
 	return 0;
 }
-
+```
 ##########################################################
